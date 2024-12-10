@@ -1,0 +1,51 @@
+// Description
+// 输入一个n阶方阵a，输出其部分元素之和。
+//
+// Input
+// 输入为两部分。第一部分第一行为一个整数n（n<=10），后接n行n列个数字，表示n阶方阵。第二部分为若干行，至EOF结束，每行四个整数，前两个整数为求和区域左上角元素坐标p、q，后两个为右下角坐标r、s。输入数据保证p、q、r、s均在方阵的有效下标范围内。
+//
+// Output
+// 每行输出一个整数m，对应输入第二部分的每一行，m为方阵a[p][q]～a[r][s] 区域内所有元素之和。
+
+// Sample Input
+// 5
+// 13 66 53 89 55
+// 11 72 61 62 46
+// 90 10 38 10 55
+// 95 20 43 27 19
+// 60 12 66 16 96
+// 1 1 3 2
+// 0 0 4 0
+// 2 1 2 4
+
+// Sample Output
+// 244
+// 269
+// 113
+
+#include <stdio.h>
+
+int main() {
+  int n;
+  scanf("%d", &n);
+
+  int matrix[n][n];
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+      scanf("%d", &matrix[i][j]);
+    }
+  }
+
+  int from_i, from_j, to_i, to_j;
+  while (scanf("%d %d %d %d", &from_i, &from_j, &to_i, &to_j) != EOF) {
+    int sum = 0;
+    for (int i = from_i; i <= to_i; i++) {
+      for (int j = from_j; j <= to_j; j++) {
+        sum += matrix[i][j];
+      }
+    }
+    printf("%d\n", sum);
+  }
+
+  return 0;
+}
