@@ -1,8 +1,6 @@
 // Description
 // 利用sin的泰勒展开式求sin值。
 //
-//
-//
 // 不得使用math.h头文件及其中的库函数。
 //
 // Input

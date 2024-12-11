@@ -24,6 +24,14 @@
 // -453
 // 1321
 
+// Append Code
+// int main() {
+//   char s[MAX_STR_LEN];
+//   while (gets(s) != NULL)
+//     printf("%d\n", strToInt(s));
+//   return 0;
+// }
+
 #include <stdio.h>
 
 #define MAX_STR_LEN 12
@@ -42,11 +50,4 @@ int strToInt(char str[]) {
     n = n * 10 + str[i] - '0';
   }
   return is_negative ? -n : n;
-}
-
-int main() {
-  char s[MAX_STR_LEN];
-  while (gets(s) != NULL)
-    printf("%d\n", strToInt(s));
-  return 0;
 }

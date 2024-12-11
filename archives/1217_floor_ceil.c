@@ -38,6 +38,14 @@
 // -2 -1
 // 2 2
 
+// Append Code
+// int main() {
+//   double data;
+//   while (scanf("%lf", &data) != EOF)
+//     printf("%d %d\n", myFloor(data), myCeil(data));
+//   return 0;
+// }
+
 #include <stdio.h>
 
 int myFloor(double data) {
@@ -46,11 +54,4 @@ int myFloor(double data) {
 
 int myCeil(double data) {
   return data > 0 ? (int)(data + 0.999999999) : (int)data;
-}
-
-int main() {
-  double data;
-  while (scanf("%lf", &data) != EOF)
-    printf("%d %d\n", myFloor(data), myCeil(data));
-  return 0;
 }

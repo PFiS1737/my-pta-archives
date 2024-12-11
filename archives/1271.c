@@ -33,6 +33,14 @@
 // Sample Output
 // 3
 
+// Append Code
+// int main() {
+//   int n;
+//   scanf("%d", &n);
+//   printf("%d", digit_sum(n));
+//   return 0;
+// }
+
 #include <stdio.h>
 
 int digit_sum(int n) {
@@ -47,11 +55,4 @@ int digit_sum(int n) {
   } else {
     return sum;
   }
-}
-
-int main() {
-  int n;
-  scanf("%d", &n);
-  printf("%d", digit_sum(n));
-  return 0;
 }

@@ -32,6 +32,14 @@
 // 0
 // 3.12352
 
+// Append Code
+// int main() {
+//   char s[MAX_STR_LEN];
+//   while (gets(s) != NULL)
+//     printf("%lg\n", strToDouble(s));
+//   return 0;
+// }
+
 #include <ctype.h>
 #include <stdio.h>
 
@@ -75,11 +83,4 @@ double strToDouble(char str[]) {
   }
 
   return sign * (trunc + fract);
-}
-
-int main() {
-  char s[MAX_STR_LEN];
-  while (gets(s) != NULL)
-    printf("%lg\n", strToDouble(s));
-  return 0;
 }

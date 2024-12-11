@@ -29,6 +29,15 @@
 // -15089
 // -660020
 
+// Append Code
+// int main() {
+//   int base;
+//   char s[MAX_STR_LEN];
+//   while ((scanf("%d:", &base) != EOF) && (gets(s) != NULL))
+//     printf("%d\n", strToInt(s, base));
+//   return 0;
+// }
+
 #include <ctype.h>
 #include <stdio.h>
 
@@ -71,12 +80,4 @@ int strToInt(char str[], int base) {
   }
 
   return sign * result;
-}
-
-int main() {
-  int base;
-  char s[MAX_STR_LEN];
-  while ((scanf("%d:", &base) != EOF) && (gets(s) != NULL))
-    printf("%d\n", strToInt(s, base));
-  return 0;
 }

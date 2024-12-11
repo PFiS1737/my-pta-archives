@@ -26,6 +26,15 @@
 //  ***
 //   *
 
+// Append Code
+// int main() {
+//   int n;
+//   char ch;
+//   scanf("%d %c", &n, &ch);
+//   print(n, ch);
+//   return 0;
+// }
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -46,12 +55,4 @@ void print(int n, char ch) {
     }
     printf("\n");
   }
-}
-
-int main() {
-  int n;
-  char ch;
-  scanf("%d %c", &n, &ch);
-  print(n, ch);
-  return 0;
 }

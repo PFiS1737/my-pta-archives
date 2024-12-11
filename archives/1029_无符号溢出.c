@@ -19,7 +19,7 @@
 #include <stdio.h>
 
 int main() {
-  int k;
+  unsigned k;
   long long factorial = 1, sum = 0;
 
   scanf("%u", &k);
