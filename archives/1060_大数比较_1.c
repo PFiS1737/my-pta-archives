@@ -38,8 +38,6 @@ void print_numstr(char *str) {
   if (!flag) {
     printf("0");
   }
-
-  printf("\n");
 }
 
 int main() {
@@ -76,8 +74,10 @@ int main() {
 
   printf("The maximum value is : ");
   print_numstr(max);
+  printf("\n");
   printf("The minimum value is : ");
   print_numstr(min);
+  printf("\n");
 
   return 0;
 }
