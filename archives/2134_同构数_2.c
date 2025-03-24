@@ -40,12 +40,7 @@ int main() {
     int is_first = 1;
     for (int i = pow(10, n - 1); i < pow(10, n); i++) {
       if (is_isomorphism(i)) {
-        if (is_first) {
-          printf("%d", i);
-          is_first = 0;
-        } else {
-          printf(" %d", i);
-        }
+        printf("%s%d", is_first ? (is_first = 0, "") : " ", i);
       }
     }
     printf("\n");

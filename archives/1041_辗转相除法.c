@@ -59,13 +59,16 @@ int gcd(int a, int b) {
   return a;
 }
 
-int lcm(int a, int b) { return (a == 0 || b == 0) ? 0 : (a / gcd(a, b)) * b; }
+int lcm(int a, int b, int gcd) {
+  return (!a || !b) ? 0 : a * b / gcd;
+}
 
 int main() {
   int a, b;
 
   while (scanf("%d %d", &a, &b) != EOF) {
-    printf("%d %d\n", gcd(a, b), lcm(a, b));
+    int g = gcd(a, b);
+    printf("%d %d\n", gcd(a, b), lcm(a, b, g));
   }
 
   return 0;

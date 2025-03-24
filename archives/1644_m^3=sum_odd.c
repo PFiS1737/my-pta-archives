@@ -29,7 +29,7 @@ void fun(int m) {
   //           = m*a + 2*(0+1+2+3+...+m-1)
   //           = m*a + m*(m-1)
   //
-  // we get: a = m*m - m + 1
+  // we get: a = m * m - m + 1
 
   int start = m * m - m + 1;
 

@@ -71,10 +71,8 @@ double strToDouble(char str[]) {
       } else {
         trunc = trunc * 10 + k;
       }
-    } else if (c == '.' && !has_dot) {
+    } else if (c == '.') {
       has_dot = 1;
-    } else {
-      continue;
     }
   }
 

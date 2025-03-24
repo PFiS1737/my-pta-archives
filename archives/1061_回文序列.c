@@ -65,9 +65,7 @@ int is_palindrome(const char *str) {
 int main() {
   char str[1001];
 
-  while (fgets(str, sizeof(str), stdin)) {
-    str[strcspn(str, "\n")] = '\0';
-
+  while (gets(str) != NULL) {
     if (is_palindrome(str)) {
       printf("Yes.\n");
     } else {
