@@ -21,6 +21,7 @@ just new [-any]
 # NOTE: 应该总是仅编辑 ./src/__main__.c 文件
 
 # 评判
+# 首次运行需无参数使用 `just` 进行初始化
 just judge
 
 # 归档当前工作区
