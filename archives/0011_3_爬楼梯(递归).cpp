@@ -27,4 +27,12 @@ double Climb(int step) {
     : step == 0
       ? 1
       : Climb(step - 1) + Climb(step - 2) + Climb(step - 3);
+
+  // return step == 1
+  //   ? 1
+  //   : step == 2
+  //     ? 2
+  //     : step == 3
+  //       ? 4 // 注意是 4 不是 3
+  //       : Climb(step - 1) + Climb(step - 2) + Climb(step - 3);
 }
