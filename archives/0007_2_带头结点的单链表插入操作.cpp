@@ -71,23 +71,24 @@ LinkList Create() {
 }
 
 int insert_link(LinkList L, int i, ElemType e) {
+  if (i <= 0) {
+    return 0;
+  }
+
   LNode *p = L;
   while (--i && p->next) {
     p = p->next;
   }
 
-  if (i) {
+  if (i > 0) {
     return 0; // out of range
   }
 
-  LNode *next = p->next;
-  p->next = (LNode *)malloc(sizeof(LNode));
-  if (!p->next) {
-    return 0;
-  }
+  LNode *node = (LNode *)malloc(sizeof(LNode));
+  node->data = e;
+  node->next = p->next;
 
-  p->next->data = e;
-  p->next->next = next;
+  p->next = node;
 
   return 1;
 }
