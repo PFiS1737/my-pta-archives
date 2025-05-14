@@ -7,3 +7,4 @@ AlignEscapedNewlines: DontAlign
 AllowShortFunctionsOnASingleLine: None
 IndentPPDirectives: AfterHash
 ColumnLimit: 90
+IndentCaseLabels: true
