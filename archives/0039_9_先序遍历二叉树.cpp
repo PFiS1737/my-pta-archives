@@ -46,7 +46,6 @@ BiTNode *CreateBiTree(string &s) {
 }
 // Prepend Code End
 
-
 void PreOrder(BiTNode *T) {
   if (T) {
     cout << T->data;

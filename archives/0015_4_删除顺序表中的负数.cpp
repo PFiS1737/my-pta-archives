@@ -103,7 +103,6 @@ int main()
 }
 // Prepend Code End
 
-
 void Del_negative(SqList *L) {
   for (int i = 0; i < L->length; i++) {
     if (L->items[i] < 0) {

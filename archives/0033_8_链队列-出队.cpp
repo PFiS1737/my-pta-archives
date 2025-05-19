@@ -72,7 +72,6 @@ int main()
 }
 // Prepend Code End
 
-
 // 补充定义
 void EnQueue(LinkQueue &Q, ElemType e) {
   QNode *p = new QNode;

@@ -61,7 +61,6 @@ int main()
 }
 // Prepend Code End
 
-
 int XNodeCountOfBiTree(BiTree T, TElemType x) {
   if (!T)
     return 0;

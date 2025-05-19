@@ -42,7 +42,6 @@ int main() {
 }
 // Prepend Code End
 
-
 void Mul(LIST *dst, const LIST *src1, const LIST *src2) {
   int i = 0, j = 0, k = 0;
 

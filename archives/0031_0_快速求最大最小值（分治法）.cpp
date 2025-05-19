@@ -28,7 +28,6 @@ int main()
 }
 // Prepend Code End
 
-
 int max(int *a, int m, int n) {
   if (m >= n)
     return a[n];

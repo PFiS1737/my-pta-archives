@@ -39,7 +39,6 @@ int main()
 }
 // Prepend Code End
 
-
 // 补充定义
 Status InitList(LinkList *L) {
   *L = (LinkList)malloc(sizeof(LinkList));

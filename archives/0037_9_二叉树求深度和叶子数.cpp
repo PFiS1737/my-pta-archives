@@ -63,7 +63,6 @@ int main()
 }
 // Prepend Code End
 
-
 int GetDepthOfBiTree(BiTree T) {
   if (T == NULL)
     return 0;

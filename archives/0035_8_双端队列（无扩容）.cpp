@@ -146,7 +146,6 @@ int main(void)
 }
 // Prepend Code End
 
-
 bool EnQueue(Deque deque, QElemSet x) {
   int front = (deque->front - 1 + deque->capacity) % deque->capacity;
   if (front != deque->rear) {

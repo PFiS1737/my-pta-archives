@@ -92,7 +92,6 @@ int main()
 }
 // Prepend Code End
 
-
 #define NEW(ty) ((ty *)malloc(sizeof(ty)))
 
 List create_list() {

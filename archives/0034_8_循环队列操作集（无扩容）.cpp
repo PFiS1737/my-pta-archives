@@ -173,7 +173,6 @@ void show(queue* q)
 }
 // Prepend Code End
 
-
 queue *createQueue() {
   queue *q = (queue *)malloc(sizeof(queue));
   q->front = q->rear = 0;

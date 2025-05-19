@@ -49,9 +49,7 @@ int main()
         queen(1,n);                //放置1～i的皇后
     return 0;
 }
-/* 请在这里填写答案 */
 // Prepend Code End
-
 
 void queen(int i, int n) {
   if (i > n)
