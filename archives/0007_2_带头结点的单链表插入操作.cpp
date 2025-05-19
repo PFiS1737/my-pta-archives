@@ -8,7 +8,7 @@
 // Sample Output
 // 1 100 2 3 4 5 6 
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -50,7 +50,7 @@ void print(LinkList L)
          p =p->next;
     }
 }
-// Append Code End
+// Prepend Code End
 
 // 补充定义
 LinkList Create() {

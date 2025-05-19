@@ -8,7 +8,7 @@
 // Sample Output
 // 21 11 13 53 97 19 
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -101,7 +101,7 @@ int main()
     TraverseSqList(A);
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 
 void Del_negative(SqList *L) {

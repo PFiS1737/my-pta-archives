@@ -9,7 +9,7 @@
 // Sample Output
 // 1 3 6
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -40,7 +40,7 @@ int main() {
   Destroy(&a);
   return 0;
 }
-// Append Code End
+// Prepend Code End
 
 
 void Mul(LIST *dst, const LIST *src1, const LIST *src2) {

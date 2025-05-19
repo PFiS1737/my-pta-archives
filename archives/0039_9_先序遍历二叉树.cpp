@@ -8,7 +8,7 @@
 // HDACBGFE
 // -+axb-cd/ef
 
-// Append Code Start
+// Prepend Code Start
 #include<iostream>
 #include<string>
 using namespace std;
@@ -44,7 +44,7 @@ BiTNode *CreateBiTree(string &s) {
     p->rchild=CreateBiTree(s);
     return p;
 }
-// Append Code End
+// Prepend Code End
 
 
 void PreOrder(BiTNode *T) {

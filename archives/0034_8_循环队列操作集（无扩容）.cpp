@@ -49,7 +49,7 @@
 // 4
 // SIZE = 8
 
-// Append Code Start
+// Prepend Code Start
 /*循环队列*/
 #include <stdio.h>
 #include <stdlib.h>
@@ -171,7 +171,7 @@ void show(queue* q)
     }
     printf("\n");
 }
-// Append Code End
+// Prepend Code End
 
 
 queue *createQueue() {

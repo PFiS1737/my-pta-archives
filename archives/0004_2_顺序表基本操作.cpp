@@ -16,7 +16,7 @@
 // 3
 // 11 2 3 4 5 6 7 8 9 10
 
-// Append Code Start
+// Prepend Code Start
 //库函数头文件包含
 #include<stdio.h>
 #include<malloc.h>
@@ -99,7 +99,7 @@ int main() {
     }
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 Status ListInsert_Sq(SqList &L, int pos, ElemType e) {
   if (L.size == L.capacity) {

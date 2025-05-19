@@ -13,7 +13,7 @@
 // 20 30 
 // 30 20 
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -90,7 +90,7 @@ int main()
     destroy_list(mylist);
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 
 #define NEW(ty) ((ty *)malloc(sizeof(ty)))

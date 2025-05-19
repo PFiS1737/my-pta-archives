@@ -7,7 +7,7 @@
 //  3
 //  2 1
 
-// Append Code Start
+// Prepend Code Start
 #include <malloc.h>
 #include <stdio.h>
 #define OK 1
@@ -37,7 +37,7 @@ int main()
   List(L);
   return 0;
 }
-// Append Code End
+// Prepend Code End
 
 
 // 补充定义

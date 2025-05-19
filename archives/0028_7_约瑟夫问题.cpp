@@ -9,7 +9,7 @@
 // Sample Output
 // 3 6 9 2 7 1 8 5 10 4 
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -47,7 +47,7 @@ int main(void)
     return 0;
 }
 /* 你的代码将被嵌在这里 */
-// Append Code End
+// Prepend Code End
 
 
 #define NEW(ty) ((ty *)malloc(sizeof(ty)))

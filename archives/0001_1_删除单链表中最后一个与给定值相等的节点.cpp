@@ -10,7 +10,7 @@
 // Sample Output
 // 1 3 1 4 5
 
-// Append Code Start
+// Prepend Code Start
 //库函数头文件包含
 #include<stdio.h>
 #include<malloc.h>
@@ -87,7 +87,7 @@ int main()
    ListPrint_L(L);
    return 0;
 }
-// Append Code End
+// Prepend Code End
 
 void ListLocateAndDel_L(LinkList L, ElemType x) {
   LNode *prev = NULL, *curr = NULL;

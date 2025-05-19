@@ -9,7 +9,7 @@
 // Sample Output
 // 4 -8 12 5 9 10 
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 
 #define MAXSIZE 20
@@ -39,7 +39,7 @@ int main()
 
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 // 补充定义
 #include <stdlib.h>

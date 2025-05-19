@@ -7,7 +7,7 @@
 // Sample Output
 // 5768
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 
 double Climb(int step);
@@ -19,7 +19,7 @@ int main()
     printf("%g\n", Climb(n));
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 double Climb(int step) {
   return step < 0

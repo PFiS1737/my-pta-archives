@@ -7,7 +7,7 @@
 // Sample Output
 // 2
 
-// Append Code Start
+// Prepend Code Start
 //头文件包含
 #include<stdlib.h>
 #include<stdio.h>
@@ -59,7 +59,7 @@ int main()
    printf("%d",n);
    return 0;
 }
-// Append Code End
+// Prepend Code End
 
 
 int XNodeCountOfBiTree(BiTree T, TElemType x) {

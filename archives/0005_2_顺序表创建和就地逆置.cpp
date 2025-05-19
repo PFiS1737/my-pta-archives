@@ -9,7 +9,7 @@
 // Sample Output
 // 4 3 2 1
 
-// Append Code Start
+// Prepend Code Start
 //库函数头文件包含
 #include<stdio.h>
 #include<malloc.h>
@@ -56,7 +56,7 @@ int main() {
     }
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 Status ListCreate_Sq(SqList &L) {
   scanf("%d", &L.size);

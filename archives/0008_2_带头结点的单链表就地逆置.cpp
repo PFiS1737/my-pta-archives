@@ -8,7 +8,7 @@
 // Sample Output
 // 4 3 2 1
 
-// Append Code Start
+// Prepend Code Start
 //库函数头文件包含
 #include<stdio.h>
 #include<malloc.h>
@@ -74,7 +74,7 @@ int main()
     ListPrint_L(L);
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 void ListReverse_L(LinkList &L) {
   LinkList prev = NULL, curr = L->next, next = NULL;

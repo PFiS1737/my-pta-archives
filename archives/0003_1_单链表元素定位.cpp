@@ -10,7 +10,7 @@
 // Sample Output
 // 1
 
-// Append Code Start
+// Prepend Code Start
 //库函数头文件包含
 #include<stdio.h>
 #include<malloc.h>
@@ -68,7 +68,7 @@ int main()
    printf("%d\n",k);
    return 0;
 }
-// Append Code End
+// Prepend Code End
 
 int ListLocate_L(LinkList L, ElemType x) {
   int idx = 0;

@@ -6,7 +6,7 @@
 // Sample Output
 // 3 2
 
-// Append Code Start
+// Prepend Code Start
 //头文件包含
 #include<stdlib.h>
 #include<stdio.h>
@@ -61,7 +61,7 @@ int main()
      numberOfLeaves=LeafCount(T);
    printf("%d %d\n",depth,numberOfLeaves);
 }
-// Append Code End
+// Prepend Code End
 
 
 int GetDepthOfBiTree(BiTree T) {

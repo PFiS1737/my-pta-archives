@@ -19,7 +19,7 @@
 // 1->3
 // 2->3
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 
 void hanoi(int n, char a, char b, char c);
@@ -31,7 +31,7 @@ int main() {
   hanoi(n, a, b, c);
   printf("\n");
 }
-// Append Code End
+// Prepend Code End
 
 void hanoi(int n, char a, char b, char c) {
   if (n == 1) {

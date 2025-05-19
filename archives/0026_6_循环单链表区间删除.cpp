@@ -10,7 +10,7 @@
 // Sample Output
 // 1 2 5 6
 
-// Append Code Start
+// Prepend Code Start
 //库函数头文件包含
 #include<stdio.h>
 #include<malloc.h>
@@ -67,7 +67,7 @@ int main()
     ListPrint_CL(CL);      
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 
 #include <iostream>

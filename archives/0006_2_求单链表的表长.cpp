@@ -6,7 +6,7 @@
 // Sample Output
 // 5
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -27,7 +27,7 @@ int main()
     printf("%d\n", Length(L));
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 // 补充定义
 LinkList Create() {

@@ -8,7 +8,7 @@
 // Sample Output
 // 8
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 
 int f( int n );
@@ -22,7 +22,7 @@ int main()
     
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 int f(int n) {
   static int cache[100] = {0, 1};

@@ -8,7 +8,7 @@
 // Head:1
 // Pop:1 3 5 7 9 NULL
 
-// Append Code Start
+// Prepend Code Start
 #include<iostream>
 using namespace std;
 
@@ -70,7 +70,7 @@ int main()
     }
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 
 // 补充定义

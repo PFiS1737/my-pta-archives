@@ -13,7 +13,7 @@
 // Sample Output
 // 1 3 5 5 7 9 11
 
-// Append Code Start
+// Prepend Code Start
 #include <iostream>
 using namespace std;
 
@@ -56,7 +56,7 @@ int main() {
   print(L);
   return 0;
 }
-// Append Code End
+// Prepend Code End
 
 // 补充定义
 void CreateDuList(DuLinkList &L, int n) {

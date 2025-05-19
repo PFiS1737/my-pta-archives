@@ -16,7 +16,7 @@
 // (1,4)(2,1)(3,5)(4,2)(5,6)(6,3)
 // (1,5)(2,3)(3,1)(4,6)(5,4)(6,2)
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 #include <stdlib.h>
 #define N 20                    //最多皇后个数
@@ -50,7 +50,7 @@ int main()
     return 0;
 }
 /* 请在这里填写答案 */
-// Append Code End
+// Prepend Code End
 
 
 void queen(int i, int n) {

@@ -7,7 +7,7 @@
 // Sample Output
 // max=9,min=1
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 #define N 100
 
@@ -26,7 +26,7 @@ int main()
     printf("max=%d,min=%d", max_val,min_val);
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 
 int max(int *a, int m, int n) {

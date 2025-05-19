@@ -7,7 +7,7 @@
 // Sample Output
 // 1010
 
-// Append Code Start
+// Prepend Code Start
 #include <stdio.h>
 
 void dectobin( int n );
@@ -21,7 +21,7 @@ int main()
     
     return 0;
 }
-// Append Code End
+// Prepend Code End
 
 void dectobin(int n) {
   if (n > 1)
