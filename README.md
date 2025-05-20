@@ -1,5 +1,11 @@
 # my-pta-archives
 
+我的 PTA 归档，使用 C++ 语言。
+
+评判程序使用 Prepend 模式，他将会插入在你写的代码的前面。
+
+查看 `cpp` 分支，了解 Append 模式的使用。
+
 ## Requirements
 
 - GNU G++
@@ -25,7 +31,7 @@ just new [-any]
 just judge
 
 # 归档当前工作区
-# 提问 Description 为会跟在 ID 后面一起组成文件名的短描述
+# 提问 Description 为组成文件名的短描述
 #      Problem 为具体题干
 just archive
 
