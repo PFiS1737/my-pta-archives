@@ -44,6 +44,9 @@ int count1(BiTNode *T) {
     return 1 + count1(T->rchild);
   else
     return count1(T->lchild) + count1(T->rchild);
+
+  // NOTE: 或这样
+  // return ((!!T->lchild ^ !!T->rchild) ? 1 : 0) + count1(T->lchild) + count1(T->rchild);
 }
 
 int main() {
