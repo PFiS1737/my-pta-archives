@@ -1,8 +1,7 @@
-IndentWidth: 2
-Language: Cpp
-Standard: c++11
+IndentWidth: 4
+Language: Java
 MaxEmptyLinesToKeep: 1
-ReflowComments: false
+ReflowComments: Never
 AlignEscapedNewlines: DontAlign
 AllowShortFunctionsOnASingleLine: None
 IndentPPDirectives: AfterHash

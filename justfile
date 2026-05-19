@@ -1,20 +1,17 @@
 set shell := ["fish", "-c"]
 
 default:
-    @just config debug build then run
+    @just build then run
 
 then:
     @echo
 
-config mode:
-    @xmake config -m {{mode}}
-
 build:
-    @xmake build
+    @cd ./src && javac -encoding UTF8 Main.java
 
 [no-exit-message]
 run:
-    @xmake run
+    @cd ./src && java -Dfile.encoding=UTF-8 -XX:+UseSerialGC Main
 
 checkout id='':
     @./scripts/checkout {{id}}
@@ -28,11 +25,3 @@ new *args:
 
 archive:
     @./scripts/archive
-
-clean:
-    @xmake clean
-
-distclean:
-    @rm -rf ./build
-    @rm -rf ./.xmake
-    @rm -rf ./.cache

@@ -10,7 +10,7 @@ set id 0
 if test (count $argv) -eq 0
     set fzf_result (fd . ./archives | fzf --preview-window "right,60%,border-left")
 
-    if test -z $fzf_result
+    if test -z "$fzf_result"
         echo "Error: No file selected."
         return 1
     end
@@ -24,7 +24,7 @@ else
     return 1
 end
 
-set files (fd --type file --regex "^$id(_.+)?\\.cpp\$" ./archives)
+set files (fd --type file --regex "^$id(_.+)?\\.java\$" ./archives)
 
 if test (count $files) -eq 0
     echo "Error: No files found with id: $id."
@@ -47,7 +47,6 @@ end
 
 set inner_sample_input 0
 set inner_sample_output 0
-set inner_prepend_code 0
 set inner_code 0
 
 for line in (cat $file)
@@ -58,11 +57,6 @@ for line in (cat $file)
 
     if string match -rq '^// Sample Output$' $line
         set inner_sample_output 1
-        continue
-    end
-
-    if string match -rq '^// Prepend Code Start$' $line
-        set inner_prepend_code 1
         continue
     end
 
@@ -84,17 +78,7 @@ for line in (cat $file)
         continue
     end
 
-    if test $inner_prepend_code -eq 1
-        if string match -rq '^// Prepend Code End$' $line
-            # INFO: magic number 2: means the prepend code has been read
-            set inner_prepend_code 2
-            continue
-        end
-        echo $line >>./src/__prepend__.cpp
-        continue
-    end
-
-    if string match -rq '^//.*$' $line; and test $inner_prepend_code -ne 2
+    if string match -rq '^//.*$' $line
         continue
     end
 
@@ -103,12 +87,8 @@ for line in (cat $file)
     end
 
     if test $inner_code -eq 1
-        if test $inner_prepend_code -eq 2
-            printf '#include "__prepend__.cpp"\n\n' >>./src/main.cpp
-            set inner_prepend_code 0
-        end
-        echo $line >>./src/main.cpp
+        echo $line >>./src/Main.java
     end
 end
 
-echo "File $file has been checked out to ./src/main.cpp"
+echo "File $file has been checked out to ./src/Main.java"
