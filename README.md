@@ -1,10 +1,10 @@
 # my-pta-archives
 
-我的 PTA 归档，使用 C++ 语言。
+我的 PTA 归档，使用 C++ 语言（数据结构课程）。
 
 评判程序使用 Prepend 模式，他将会插入在你写的代码的前面。
 
-查看 `cpp` 分支，了解 Append 模式的使用。
+另见 `java` 分支。
 
 ## Requirements
 
