@@ -36,7 +36,7 @@ or begin
 end
 echo
 
-trap 'rm -f ./src/out.tmp ./src/time' INT TERM EXIT
+trap 'rm -f ./src/out.tmp ./src/time ./src/*.class' INT TERM EXIT
 
 echo_h1 "Running..."
 

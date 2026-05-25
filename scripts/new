@@ -42,6 +42,11 @@ if not set -q _flag_n
 public class Main {
     public static void main() {
         Scanner in = new Scanner(System.in);
+        PrintStream IO = System.out;
+        
+        
+        
+        in.close();
     }
 }" >>./src/Main.java
 end
