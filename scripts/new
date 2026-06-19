@@ -37,7 +37,7 @@ if not set -q _flag_n
         echo $smaple_output >>./src/out.txt
     end
 
-    printf "import java.util.Scanner;
+    printf "import java.util.*;
 
 public class Main {
     public static void main() {
