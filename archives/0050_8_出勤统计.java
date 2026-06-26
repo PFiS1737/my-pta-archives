@@ -30,7 +30,8 @@ class Main {
         sc.tokens()
             .takeWhile(s -> !s.equals("end"))
             .collect(
-                Collectors.groupingBy(x -> x, LinkedHashMap::new, Collectors.counting()))
+                Collectors.groupingBy(x -> x, LinkedHashMap::new, Collectors.counting())
+            )
             .entrySet()
             .stream()
             .sorted((a, b) -> b.getValue().compareTo(a.getValue()))

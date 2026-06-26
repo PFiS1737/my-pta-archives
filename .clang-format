@@ -4,6 +4,8 @@ MaxEmptyLinesToKeep: 1
 ReflowComments: Never
 AlignEscapedNewlines: DontAlign
 AllowShortFunctionsOnASingleLine: None
-IndentPPDirectives: AfterHash
+BreakBeforeCloseBracketFunction: true
+BreakAfterOpenBracketFunction: true
+AlignAfterOpenBracket: false
 ColumnLimit: 90
 IndentCaseLabels: true

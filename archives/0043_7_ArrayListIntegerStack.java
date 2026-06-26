@@ -5,7 +5,7 @@
 // public Integer peek(); // 获得栈顶元素，如栈顶为空，则返回null。注意：不要出栈
 // public boolean empty(); // 如果栈为空返回true
 // public int size();  // 返回栈中元素数量
-// 定义IntegerStack的实现类ArrayListIntegerStack，内部使用ArrayList存储。该类中包含：  
+// 定义IntegerStack的实现类ArrayListIntegerStack，内部使用ArrayList存储。该类中包含：
 //
 // 构造方法：
 // 在无参构造方法中新建ArrayList或者LinkedList，作为栈的内部存储。
@@ -58,15 +58,19 @@ public class Main {
             int x = sc.nextInt();
             System.out.println(stack.push(x));
         }
-        System.out.println((stack.peek() == null ? "null" : stack.peek()) + "," +
-                           stack.empty() + "," + stack.size());
+        System.out.println(
+            (stack.peek() == null ? "null" : stack.peek()) + "," + stack.empty() + "," +
+            stack.size()
+        );
         System.out.println(stack);
         int x = sc.nextInt();
         while (x-- > 0) {
             System.out.println(stack.peek() == null ? "null" : stack.pop());
         }
-        System.out.println((stack.peek() == null ? "null" : stack.peek()) + "," +
-                           stack.empty() + "," + stack.size());
+        System.out.println(
+            (stack.peek() == null ? "null" : stack.peek()) + "," + stack.empty() + "," +
+            stack.size()
+        );
         System.out.println(stack);
         sc.close();
     }

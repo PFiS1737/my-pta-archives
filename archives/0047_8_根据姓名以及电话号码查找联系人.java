@@ -6,7 +6,7 @@
 //
 // 方法：
 //
-// 无参构造方法，有参构造方法（id, name, phoneNumber，addres）, 
+// 无参构造方法，有参构造方法（id, name, phoneNumber，addres）,
 //
 // 各个参数的getter/setter方法，
 //
@@ -150,9 +150,10 @@ class Utils {
     }
     private static List<String> getPhoneNumber() {
 
-        String[] telFirst = ("134,135,136,137,138,139,150,151,152,157,158,159,130,131,"
-                             + "132,155,156,133,153")
-                                .split(",");
+        String[] telFirst =
+            ("134,135,136,137,138,139,150,151,152,157,158,159,130,131,"
+                + "132,155,156,133,153")
+                .split(",");
         StringBuilder sb = new StringBuilder();
         List<String> phoneNumbers = new ArrayList<String>();
         for (int i = 0; i < Utils.number; i++) {
@@ -172,8 +173,8 @@ class Utils {
     private static List<String> getPersonAddress() {
         List<String> addresses = new ArrayList<String>();
         String[] roads = {"HuanDao Road", "WenZeng Road", "ZhongShang Road", "KaiHe Road",
-                          "NanHua Road",  "SongBai Road", "BinShui Road",    "ShiGu Road",
-                          "JiYuan Road",  "YinJiang Road"};
+            "NanHua Road", "SongBai Road", "BinShui Road", "ShiGu Road", "JiYuan Road",
+            "YinJiang Road"};
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < Utils.number; i++) {
             sb.delete(0, sb.length());
@@ -181,8 +182,10 @@ class Utils {
                 if (j == 1) {
                     sb.append(roads[rd.nextInt(roads.length)]);
                 } else {
-                    sb.append("Room " + rd.nextInt(100) + "-" + rd.nextInt(1000) + "-" +
-                              rd.nextInt(10000) + ", ");
+                    sb.append(
+                        "Room " + rd.nextInt(100) + "-" + rd.nextInt(1000) + "-" +
+                        rd.nextInt(10000) + ", "
+                    );
                 }
             }
             addresses.add(sb.toString());

@@ -12,7 +12,7 @@
 // 5
 // car C001 253000
 // car C002 163000
-// bicycle B001 
+// bicycle B001
 // bicycle B002
 // car C003 161000
 // 20

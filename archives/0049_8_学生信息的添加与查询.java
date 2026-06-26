@@ -65,8 +65,8 @@ class Student implements Comparable {
         //      最终改成 String。
         return String.format(
             "Student [id=%s, name=%s, birthday=%04d年%02d月%02d日, score=%.1f]", id, name,
-            birthday.getYear(), birthday.getMonthValue(), birthday.getDayOfMonth(),
-            score);
+            birthday.getYear(), birthday.getMonthValue(), birthday.getDayOfMonth(), score
+        );
     }
     @Override
     public int compareTo(Object o) {

@@ -54,7 +54,9 @@ class CellPhone {
 
     @Override
     public String toString() {
-        return String.format("CellPhone [model:%s, memory:%d, storage:%d, price:%d]",
-                             this.t, this.mem, this.sd, this.price);
+        return String.format(
+            "CellPhone [model:%s, memory:%d, storage:%d, price:%d]", this.t, this.mem,
+            this.sd, this.price
+        );
     }
 }

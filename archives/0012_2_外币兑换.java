@@ -47,15 +47,17 @@ public class Main {
         //输入人民币金额
         double money = sc.nextDouble();
         //输出上述金额人民币可兑换外币金额
-        System.out.printf("%.2f人民币兑换%.2f%s\n", money,
-                          CurrencyExchange.saleForeignMoney(money),
-                          CurrencyExchange.getCurrencyName());
+        System.out.printf(
+            "%.2f人民币兑换%.2f%s\n", money, CurrencyExchange.saleForeignMoney(money),
+            CurrencyExchange.getCurrencyName()
+        );
         //输入外币金额
         money = sc.nextDouble();
         //输出上述金额外币可兑换人民币金额
-        System.out.printf("%.2f%s兑换%.2f人民币", money,
-                          CurrencyExchange.getCurrencyName(),
-                          CurrencyExchange.purchaseForeignMoney(money));
+        System.out.printf(
+            "%.2f%s兑换%.2f人民币", money, CurrencyExchange.getCurrencyName(),
+            CurrencyExchange.purchaseForeignMoney(money)
+        );
         sc.close();
     }
 }

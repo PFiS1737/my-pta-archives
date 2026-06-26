@@ -44,8 +44,9 @@ class Book {
     }
     @Override
     public String toString() {
-        return String.format("name: %s, price: %d, author: %s, edition: %d", name, price,
-                             author, edition);
+        return String.format(
+            "name: %s, price: %d, author: %s, edition: %d", name, price, author, edition
+        );
     }
     @Override
     public boolean equals(Object obj) {

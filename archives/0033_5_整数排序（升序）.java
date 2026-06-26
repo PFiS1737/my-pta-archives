@@ -28,7 +28,11 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         int[] arr = {
-            in.nextInt(), in.nextInt(), in.nextInt(), in.nextInt(), in.nextInt(),
+            in.nextInt(),
+            in.nextInt(),
+            in.nextInt(),
+            in.nextInt(),
+            in.nextInt(),
         };
 
         Arrays.sort(arr);

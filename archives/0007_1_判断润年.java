@@ -18,9 +18,9 @@ public class Main {
     public static void main() {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        System.out.println(n + (((n % 4 == 0 && n % 100 != 0) || (n % 400 == 0))
-                                    ? "是闰年"
-                                    : "不是闰年"));
+        System.out.println(
+            n + (((n % 4 == 0 && n % 100 != 0) || (n % 400 == 0)) ? "是闰年" : "不是闰年")
+        );
         in.close();
     }
 }

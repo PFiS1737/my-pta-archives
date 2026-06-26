@@ -37,8 +37,9 @@ public class Main {
             String[] str = sc.nextLine().split("\\s+");
             //三个字符串表示为Graduate，否则为Undergraduate
             if (str.length > 2) {
-                stu[i] = new Graduate(str[0], Double.parseDouble(str[1]),
-                                      Boolean.parseBoolean(str[2]));
+                stu[i] = new Graduate(
+                    str[0], Double.parseDouble(str[1]), Boolean.parseBoolean(str[2])
+                );
             } else {
                 stu[i] = new Undergraduate(str[0], Double.parseDouble(str[1]));
             }

@@ -32,9 +32,11 @@ public class Main {
         while (sc.hasNext()) {
             n = sc.nextInt(); //待考察的点数
             int count = 0;    //计数器
-            Rect rect = new Rect(sc.nextInt(), sc.nextInt(), sc.nextInt(),
-                                 sc.nextInt()); //构建矩形对象
-            for (int i = 0; i < n; i++)         //判断n个点是否在矩形对象rect中
+            Rect rect = new Rect(
+                sc.nextInt(), sc.nextInt(), sc.nextInt(),
+                sc.nextInt()
+            );                          //构建矩形对象
+            for (int i = 0; i < n; i++) //判断n个点是否在矩形对象rect中
             {
                 x = sc.nextInt();                     //读入待考察点的x坐标
                 y = sc.nextInt();                     //读入待考察点的y坐标

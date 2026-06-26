@@ -20,8 +20,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        String[] strs = {"12345",       "67891", "12347809931",
-                         "98765432102", "67891", "12347809933"};
+        String[] strs = {
+            "12345", "67891", "12347809931", "98765432102", "67891", "12347809933"};
         StringList sl = new StringList();
         LinkedList<String> qqList = sl.constructList(strs);
         System.out.println(sl.search(qqList));

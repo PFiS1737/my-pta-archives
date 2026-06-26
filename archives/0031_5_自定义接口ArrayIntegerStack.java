@@ -51,8 +51,10 @@ public class Main {
             System.out.println(stack.push(in.nextInt()));
         }
 
-        System.out.println((stack.peek() == null ? "null" : stack.peek()) + "," +
-                           stack.empty() + "," + stack.size());
+        System.out.println(
+            (stack.peek() == null ? "null" : stack.peek()) + "," + stack.empty() + "," +
+            stack.size()
+        );
         System.out.println(Arrays.toString(stack.inner));
 
         int x = in.nextInt();
@@ -60,8 +62,10 @@ public class Main {
             System.out.println(stack.pop());
         }
 
-        System.out.println((stack.peek() == null ? "null" : stack.peek()) + "," +
-                           stack.empty() + "," + stack.size());
+        System.out.println(
+            (stack.peek() == null ? "null" : stack.peek()) + "," + stack.empty() + "," +
+            stack.size()
+        );
         System.out.println(Arrays.toString(stack.inner));
 
         in.close();
